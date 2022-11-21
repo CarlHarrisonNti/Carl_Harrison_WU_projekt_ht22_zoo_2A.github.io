@@ -1,8 +1,28 @@
-h1{
+header{
+    background-position: bottom 0px right 00px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+    margin-bottom: 30px;
+    padding-top: 250px;
+    padding-bottom: 250px;
+    background-image: url("../img/animals/keyur-nandaniya-vu0gvM5he8o-unsplash.jpg");
+
+}
+
+h1{ 
     text-align: center;
+    font-size: 80px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+    text-shadow: 4px 4px #000000;
+    
+
 }
 
 #grid_wrapper {
+    margin: auto;
+    width: 95%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -16,9 +36,13 @@ h1{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: url("../img/food/image.jpeg");
+    background-image: url("../img/food/anh-nguyen-kcA-c3f_3FE-unsplash.jpg");
     border-radius: 10px;
     text-decoration: none;
+    transition: 0.1s;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 #meny:hover {
@@ -27,14 +51,18 @@ h1{
 
 #meny > hr {
     position: relative;
-    bottom: 25px;
-    width: 20%;
-    border: 2px solid white;
+    bottom: calc(30% + 29px);
+    width: 50px;
+    border: 2px solid rgb(0, 0, 0);
 }
 
 #meny > h2 {
+    font-size: 30px;
+    position: relative;
+    bottom: 30%;
     text-align: center;
-    color: white;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 2px 2px #000000;
 }
 
 
@@ -44,24 +72,49 @@ h1{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: url("../img/food/image.jpeg");
+    background-image: url("../img/animals/-lizards_-animals_-zoo_-istanbul_-turkey_-istanbulzoo_-tourism_\(14304639363\).jpeg");
     border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 0px;
+    margin: 0px;
+    text-shadow: 1px 1px 2px #000000;
 }
 
-#oppetider > h2 {
-    text-align: center;
-    color: white;
+#oppetider > hr {
+    position: relative;
+    bottom: 22px;
+    width: 90px;
+    border: 2px solid white;
+    
+}
+
+#oppetider > p {
+    position: relative;
+    bottom: 40px;
+    text-shadow: 1px 1px 2px #000000;
 }
 
 
 #bild_1{
     grid-area: bild1;
-    background-image: url("../img/food/image.jpeg");
+    background-image: url("../img/animals/meerkats-zoo-animals-zoological-garden-preview.jpeg");
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 #bild_2{
     grid-area: bild2;
-    background-image: url("../img/food/image.jpeg");
+    background-image: url("../img/animals/ray-hennessy-xUUZcpQlqpM-unsplash.jpg");
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 #om_oss {
@@ -69,9 +122,13 @@ h1{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: url("../img/food/image.jpeg");
+    background-image: url("../img/animals/delfi-de-la-rua-vfzfavUZmfc-unsplash.jpg");
     border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     text-decoration: none;
+    transition: 0.1s;
 }
 
 #om_oss:hover {
@@ -80,12 +137,16 @@ h1{
 
 #om_oss > hr {
     position: relative;
-    bottom: 25px;
-    width: 20%;
-    border: 2px solid white;
+    bottom: calc(30% + 30px);
+    width: 210px;
+    border: 2px solid rgb(0, 0, 0);
 }
 
 #om_oss > h2 {
+    position: relative;
+    bottom: 30%;
+    font-size: 30px;
     text-align: center;
-    color: white;
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 1px 1px 1px #000000;
 }
