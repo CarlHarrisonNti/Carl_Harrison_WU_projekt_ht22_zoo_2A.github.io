@@ -1,0 +1,91 @@
+h1{
+    text-align: center;
+}
+
+#grid_wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, );
+    grid-gap: 10px;
+    height: 100vh;
+    grid-template-areas: "meny oppe oppe" "meny bild1 bild2" "meny om om";
+}
+
+#meny {
+    grid-area: meny;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("../img/food/image.jpeg");
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+#meny:hover {
+    box-shadow: 0px 0px 10px 5px #888888;
+}
+
+#meny > hr {
+    position: relative;
+    bottom: 25px;
+    width: 20%;
+    border: 2px solid white;
+}
+
+#meny > h2 {
+    text-align: center;
+    color: white;
+}
+
+
+
+#oppetider {
+    grid-area: oppe;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("../img/food/image.jpeg");
+    border-radius: 10px;
+}
+
+#oppetider > h2 {
+    text-align: center;
+    color: white;
+}
+
+
+#bild_1{
+    grid-area: bild1;
+    background-image: url("../img/food/image.jpeg");
+}
+
+#bild_2{
+    grid-area: bild2;
+    background-image: url("../img/food/image.jpeg");
+}
+
+#om_oss {
+    grid-area: om;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("../img/food/image.jpeg");
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+#om_oss:hover {
+    box-shadow: 0px 0px 10px 5px #888888;
+}
+
+#om_oss > hr {
+    position: relative;
+    bottom: 25px;
+    width: 20%;
+    border: 2px solid white;
+}
+
+#om_oss > h2 {
+    text-align: center;
+    color: white;
+}
