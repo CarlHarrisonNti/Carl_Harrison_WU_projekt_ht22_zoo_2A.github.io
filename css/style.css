@@ -1,4 +1,4 @@
-header{
+#first_page{
     background-position: bottom 0px right 00px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -148,4 +148,109 @@ h1{
     text-align: center;
     color: rgba(0, 0, 0, 0);
     text-shadow: 1px 1px 1px #000000;
+}
+
+
+
+
+
+#grid_wrapper2 {
+    margin: auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 100px 30px;
+    height: 95vh;
+    grid-template-areas: "bild1 bild2 bild3 bild4" "bild5 bild6 bild7 bild8";
+}
+
+#card_1 {
+    grid-area: bild1;
+}
+
+#card_2 {
+    grid-area: bild2;
+}
+
+#card_3 {
+    grid-area: bild3;
+
+}
+
+#card_4 {
+    grid-area: bild4;
+}
+
+#card_5 {
+    grid-area: bild5;
+}
+
+#card_6 {
+    grid-area: bild6;
+}
+
+#card_7 {
+    grid-area: bild7;
+}
+
+#card_8 {
+    grid-area: bild8;
+}
+
+.card > img, #mimemail-body {
+    width: 190px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 150px;
+    position: relative;
+    bottom: 25%;
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #bebebe;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.1s;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 10px 5px #888888;
+}
+
+.card > hr {
+    width: 99%;
+    border: 2px dotted rgb(0, 0, 0);
+    position: relative;
+    bottom: 30%;
+}
+
+.card > div > .icon {
+    width: 35px;
+    height: 35px;
+    position: relative;
+    bottom: 30%;
+}
+
+.card > p {
+    font-size: 20px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 1px #000000;
+    position: relative;
+    bottom: 30%;
+}
+.card > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
