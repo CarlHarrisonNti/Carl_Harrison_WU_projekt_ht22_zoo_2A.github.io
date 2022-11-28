@@ -11,13 +11,25 @@
 }
 
 h1{ 
-    text-align: center;
+    text-align: center;;
     font-size: 80px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Times New Roman', Times, serif;
     color: #fff;
     text-shadow: 4px 4px #000000;
     
 
+}
+
+.card2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 #grid_wrapper {
@@ -33,16 +45,10 @@ h1{
 
 #meny {
     grid-area: meny;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     background-image: url("../img/food/anh-nguyen-kcA-c3f_3FE-unsplash.jpg");
-    border-radius: 10px;
     text-decoration: none;
     transition: 0.1s;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+
 }
 
 #meny:hover {
@@ -57,6 +63,7 @@ h1{
 }
 
 #meny > h2 {
+    font-family: 'Times New Roman', Times, serif;
     font-size: 30px;
     position: relative;
     bottom: 30%;
@@ -69,14 +76,7 @@ h1{
 
 #oppetider {
     grid-area: oppe;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     background-image: url("../img/animals/-lizards_-animals_-zoo_-istanbul_-turkey_-istanbulzoo_-tourism_\(14304639363\).jpeg");
-    border-radius: 10px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     text-align: center;
     color: rgb(255, 255, 255);
     padding: 0px;
@@ -92,8 +92,10 @@ h1{
 }
 
 #oppetider > p {
+    font-family: 'Times New Roman', Times, serif;
     position: relative;
     bottom: 40px;
+    color: white;
     text-shadow: 1px 1px 2px #000000;
 }
 
@@ -101,32 +103,16 @@ h1{
 #bild_1{
     grid-area: bild1;
     background-image: url("../img/animals/meerkats-zoo-animals-zoological-garden-preview.jpeg");
-    border-radius: 10px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
 #bild_2{
     grid-area: bild2;
     background-image: url("../img/animals/ray-hennessy-xUUZcpQlqpM-unsplash.jpg");
-    border-radius: 10px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
 #om_oss {
     grid-area: om;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     background-image: url("../img/animals/delfi-de-la-rua-vfzfavUZmfc-unsplash.jpg");
-    border-radius: 10px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    text-decoration: none;
     transition: 0.1s;
 }
 
@@ -142,6 +128,7 @@ h1{
 }
 
 #om_oss > h2 {
+    font-family: 'Times New Roman', Times, serif;
     position: relative;
     bottom: 30%;
     font-size: 30px;
@@ -220,7 +207,7 @@ h1{
     background-position: center;
     padding: 10px 0px;
 }
-https://www.w3schools.com/howto/howto_css_flip_card.asp
+
 
 .card:hover {
     box-shadow: 0px 0px 10px 5px #888888;
@@ -248,4 +235,22 @@ https://www.w3schools.com/howto/howto_css_flip_card.asp
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+nav {
+    background-color: #bebebe;
+    border-radius: 10px;
+    padding: 10px 0px;
+    margin: 10px 0px;
+    font-size: large;
+}
+
+nav > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
 }
