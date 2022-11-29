@@ -1,3 +1,7 @@
+*{
+    text-align: center;
+}
+
 #first_page{
     background-position: bottom 0px right 00px;
     background-repeat: no-repeat;
@@ -254,4 +258,9 @@ nav > ul {
 
 a {
     text-decoration: none;
+}
+
+#meny_rubrik {
+    color: #000000;
+    text-shadow: 0px 0px #000000;
 }
