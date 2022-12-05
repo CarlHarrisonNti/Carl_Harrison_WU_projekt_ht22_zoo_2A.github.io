@@ -147,45 +147,10 @@ h1{
     margin: auto;
     width: 90%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
     grid-gap: 100px 30px;
-    height: 95vh;
-    grid-template-areas: "bild1 bild2 bild3 bild4" "bild5 bild6 bild7 bild8";
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
-#card_1 {
-    grid-area: bild1;
-}
-
-#card_2 {
-    grid-area: bild2;
-}
-
-#card_3 {
-    grid-area: bild3;
-
-}
-
-#card_4 {
-    grid-area: bild4;
-}
-
-#card_5 {
-    grid-area: bild5;
-}
-
-#card_6 {
-    grid-area: bild6;
-}
-
-#card_7 {
-    grid-area: bild7;
-}
-
-#card_8 {
-    grid-area: bild8;
-}
 
 .card > img, #mimemail-body {
     width: 190px;
@@ -238,8 +203,8 @@ h1{
 nav {
     background-color: #bebebe;
     border-radius: 10px;
-    padding: 10px 0px;
-    margin: 10px 0px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
     font-size: large;
 }
 
