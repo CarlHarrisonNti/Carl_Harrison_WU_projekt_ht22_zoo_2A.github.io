@@ -309,4 +309,16 @@ a {
       .right {
         left: 0%;
       }
+      #grid_wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 200vh;
+      }
+      .card2 {
+        width: 400px;
+        margin: 10px;
+        height: 1000px;
+      }
     }
