@@ -291,7 +291,7 @@ a {
   }
   
   
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 800px) {
       .timeline::after {
         left: 28px;
       }
@@ -322,3 +322,19 @@ a {
         height: 1000px;
       }
     }
+
+
+.content > img {
+    width: 98%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#karta {
+    width: max(55%, 500px);
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: #000000 solid 2px;
+}
