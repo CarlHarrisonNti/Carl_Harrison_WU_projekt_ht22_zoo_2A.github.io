@@ -21,8 +21,6 @@ h1{
     font-family: 'Times New Roman', Times, serif;
     color: #fff;
     text-shadow: 4px 4px #000000;
-    
-
 }
 
 .card2 {
@@ -47,6 +45,10 @@ h1{
     grid-template-areas: "meny oppe oppe" "meny bild1 bild2" "meny om om";
 }
 
+#main {
+    background-color: #df8947a4;
+}
+
 #meny {
     grid-area: meny;
     background-image: url("../img/food/anh-nguyen-kcA-c3f_3FE-unsplash.jpg");
@@ -55,7 +57,7 @@ h1{
 }
 
 #meny:hover {
-    box-shadow: 0px 0px 10px 5px #888888;
+    box-shadow: 0px 0px 10px 5px #000000b9;
 }
 
 #meny > hr {
@@ -120,7 +122,7 @@ h1{
 }
 
 #om_oss:hover {
-    box-shadow: 0px 0px 10px 5px #888888;
+    box-shadow: 0px 0px 10px 5px #000000b9;
 }
 
 #om_oss > hr {
@@ -154,9 +156,13 @@ body {
     grid-gap: 100px 30px;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
+    color: white;
 }
 
+#meny_body {
+    background-color: #779977a4; 
+}
 
 .outer-content > img, #mimemail-body {
     width: 190px;
@@ -282,6 +288,8 @@ a {
     background-color: rgb(33, 30, 49);
     position: relative;
 }
+
+
   
 .left {
     left: 0;
@@ -352,10 +360,11 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-background-color: #bebebe;
+background-color: rgb(90, 109, 134);
 border-radius: 10px;
 padding: 10px 0px;
 width: 300px;  
+color: white;
 }
 
 .card:hover .card_game {
@@ -371,13 +380,25 @@ height: 100%;
 }
 
 .outer-content {
-background-color: #bbb;
-color: black;
+background-color: rgb(90, 109, 134);
+color: rgb(3, 3, 3);
 }
 
 .inner-content {
 display: inline;
-background-color: #bebebe;
+background-color: rgb(90, 109, 134);
 color: rgb(0, 0, 0);
 transform: rotateY(180deg);
+border-radius: 10px;
 }
+
+
+article {
+    background-color: #779977a4;
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    padding-top: 5px;
+    border-radius: 10px;
+}
+
