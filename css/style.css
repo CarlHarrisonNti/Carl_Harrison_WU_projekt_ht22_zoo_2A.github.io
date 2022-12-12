@@ -35,13 +35,14 @@ h1{
 }
 
 #grid_wrapper {
+    grid-area: grid;
     margin: auto;
-    width: 95%;
     display: grid;
+    width: 95%;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-gap: 10px;
-    height: 100vh;
+    height: 100%;
     grid-template-areas: "meny oppe oppe" "meny bild1 bild2" "meny om om";
 }
 
@@ -158,6 +159,7 @@ body {
     justify-content: center;
     flex-wrap: wrap; 
     color: white;
+    grid-area: flex;
 }
 
 #meny_body {
@@ -327,7 +329,7 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 200vh;
+    height: 300vh;
     }
     .card2 {
     width: 400px;
@@ -400,5 +402,38 @@ article {
     padding: 10px;
     padding-top: 5px;
     border-radius: 10px;
+    grid-area: article;
 }
 
+#main_grid_wrapper{
+
+    display: grid;
+    height: max(200vh, 1080px) ;
+    grid-template-rows: repeat(2, minmax(100vh, 100%));
+    grid-template-areas: "splash" "grid";
+    padding: 0px;
+    margin-top: 0px;
+}
+
+#first_page{
+ grid-area: splash;
+}
+
+#meny_grid_wrapper{
+    display: grid;
+    height: 200vh ;
+    grid-template-rows: repeat(70px, 300px, 20px, minmax(100vh, 100%));
+    grid-template-areas: "nav" "article" "spacer" "flex";
+    padding: 0px;
+    margin-top: 0px;
+}
+
+
+#om_oss_grid_wrapper{
+    display: grid;
+    height: 200vh ;
+    grid-template-rows: repeat(70px, 300px, minmax(100vh, 100%));
+    grid-template-areas: "nav" "article" "flex";
+    padding: 0px;
+    margin-top: 0px;
+}
