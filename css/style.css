@@ -3,16 +3,13 @@
     box-sizing: border-box;
 }
 
-#first_page{
-    background-position: bottom 0px right 00px;
-    background-repeat: no-repeat;
-    background-size: cover;
+body {
+    padding: 0px;
     margin: 0px;
-    margin-bottom: 30px;
-    padding-top: 250px;
-    padding-bottom: 250px;
-    background-image: url("../img/animals/keyur-nandaniya-vu0gvM5he8o-unsplash.jpg");
+}
 
+a {
+    text-decoration: none;
 }
 
 h1{ 
@@ -23,15 +20,32 @@ h1{
     text-shadow: 4px 4px #000000;
 }
 
-.card2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+h2{ 
+    text-align: center;;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+}
+
+#main {
+    background-color: #df8947a4;
+}
+
+#meny_body {
+    background-color: #779977a4; 
+}
+
+
+#first_page{
+    background-position: bottom 0px right 00px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-    font-family: 'Times New Roman', Times, serif;
+    margin: 0px;
+    margin-bottom: 30px;
+    padding-top: 250px;
+    padding-bottom: 250px;
+    background-image: url("../img/animals/keyur-nandaniya-vu0gvM5he8o-unsplash.jpg");
+
 }
 
 #grid_wrapper {
@@ -46,15 +60,27 @@ h1{
     grid-template-areas: "meny oppe oppe" "meny bild1 bild2" "meny om om";
 }
 
-#main {
-    background-color: #df8947a4;
+.card2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card2 > h2 {
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 #meny {
     grid-area: meny;
     background-image: url("../img/food/anh-nguyen-kcA-c3f_3FE-unsplash.jpg");
     transition: 0.1s;
-
 }
 
 #meny:hover {
@@ -69,15 +95,11 @@ h1{
 }
 
 #meny > h2 {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
     position: relative;
     bottom: 30%;
-    text-align: center;
     color: rgb(0, 0, 0);
     text-shadow: 1px 2px 2px #000000;
 }
-
 
 
 #oppetider {
@@ -103,6 +125,12 @@ h1{
     bottom: 40px;
     color: white;
     text-shadow: 1px 1px 2px #000000;
+}
+
+#oppetider > h2{ 
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+    text-shadow: 4px 4px #000000;
 }
 
 
@@ -134,20 +162,10 @@ h1{
 }
 
 #om_oss > h2 {
-    font-family: 'Times New Roman', Times, serif;
     position: relative;
     bottom: 30%;
-    font-size: 30px;
-    text-align: center;
     color: rgba(0, 0, 0, 0);
     text-shadow: 1px 1px 1px #000000;
-}
-
-
-
-body {
-    padding: 0px;
-    margin: 0px;
 }
 
 #grid_wrapper2 {
@@ -162,18 +180,12 @@ body {
     grid-area: flex;
 }
 
-#meny_body {
-    background-color: #779977a4; 
-}
-
 .outer-content > img, #mimemail-body {
     width: 190px;
     height: 190px;
     object-fit: cover;
     border-radius: 150px;
 }
-
-
 
 .outer-content {
     display: flex;
@@ -186,9 +198,6 @@ body {
     padding: 10px 0px;
     width: 300px;  
 }
-
-
-
 
 .outer-content > hr {
     width: 99%;
@@ -236,11 +245,6 @@ nav > ul {
     padding: 0px;
     margin: 0px;
 }
-
-a {
-    text-decoration: none;
-}
-
 
 #meny_rubrik {
     color: #000000;
@@ -291,8 +295,6 @@ a {
     position: relative;
 }
 
-
-  
 .left {
     left: 0;
 }
