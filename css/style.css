@@ -53,19 +53,18 @@ h3 {
 
 
 #first_page{
-    background-position: bottom 0px right 00px;
+    background-position: bottom 0px right 0px;
     background-repeat: no-repeat;
     background-size: cover;
+    padding-top: 220px;
     margin: 0px;
     margin-bottom: 30px;
-    padding-top: 250px;
-    padding-bottom: 250px;
     background-image: url("../img/animals/keyur-nandaniya-vu0gvM5he8o-unsplash.jpg");
 
 }
 
 #grid_wrapper {
-    grid-area: grid;
+    grid-area: splash_grid;
     margin: auto;
     display: grid;
     width: 95%;
@@ -281,7 +280,7 @@ nav > ul {
     background-color: rgb(33, 29, 88);
     left: calc(50% - 3px);
     top: 15px;
-    bottom: 0;
+    bottom: -20px;
     width: 7px;
     content: '';
 }
@@ -406,30 +405,32 @@ color: rgb(3, 3, 3);
 }
 
 .inner-content {
-display: inline;
+display: flex;
 background-color: rgb(113, 130, 153);
 color: rgb(0, 0, 0);
 transform: rotateY(180deg);
 border-radius: 10px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 }
 
 
 article {
     border: #000000 solid 2px;
-    width: max(30%, 400px);
+    width: max(30%, auto);
     margin: auto;
     padding: 10px;
     padding-top: 5px;
     border-radius: 10px;
-    grid-area: article;
+    grid-area: meny_article;
 }
 
 #main_grid_wrapper{
-
     display: grid;
     height: max(200vh, 1080px);
-    grid-template-rows: 1fr 5px 1fr;
-    grid-template-areas: "splash" "hr" "grid";
+    grid-template-rows: 1fr 5px 1fr fit-content(100%);
+    grid-template-areas: "splash" "hr" "splash_grid" "footer";
     padding: 0px;
     margin-top: 0px;
 }
@@ -440,9 +441,9 @@ article {
 
 #meny_grid_wrapper{
     display: grid;
-    height: 100vh ;
-    grid-template-rows: 50px 450px 50px minmax(100vh, 100%);
-    grid-template-areas: "nav" "article" "spacer" "flex";
+    height: auto ;
+    grid-template-rows: 50px 450px 50px minmax(100vh, 100%) fit-content(100%);
+    grid-template-areas: "nav" "meny_article" "spacer" "flex" "footer";
     padding: 0px;
     margin-top: 0px;
     margin: 0px;
@@ -451,9 +452,9 @@ article {
 
 #om_oss_grid_wrapper{
     display: grid;
-    height: 200vh ;
-    grid-template-rows: 900px fit-content(100%);
-    grid-template-areas: "nav" "flex";
+    height: auto;
+    grid-template-rows: 900px fit-content(100%) fit-content(100%);
+    grid-template-areas: "nav" "flex" "footer";
     padding: 0px;
     margin-top: 0px;
 }
@@ -466,4 +467,17 @@ article {
 
 #om_oss_main {
     background-color: #f5b17c;
+}
+
+#spacer{
+    grid-area: spacer;
+}
+
+.footer {
+    margin-top: 20px;
+    grid-area: footer;
+    background-color: rgb(38, 30, 83);
+    height: 75px;
+    width: 100%;
+    box-shadow: 0px 0px 10px 8px #000000b9;
 }
