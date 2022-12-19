@@ -366,7 +366,7 @@ nav > ul {
 
 #karta {
     width: max(55%, 500px);
-    height: 400px;
+    height: auto;
     object-fit: cover;
     border-radius: 10px;
     border: #000000 solid 2px;
@@ -453,7 +453,7 @@ article {
 #om_oss_grid_wrapper{
     display: grid;
     height: auto;
-    grid-template-rows: 900px fit-content(100%) fit-content(100%);
+    grid-template-rows: fit-content(100%) fit-content(100%) fit-content(100%);
     grid-template-areas: "nav" "flex" "footer";
     padding: 0px;
     margin-top: 0px;
@@ -480,4 +480,9 @@ article {
     height: 75px;
     width: 100%;
     box-shadow: 0px 0px 10px 8px #000000b9;
+}
+
+#kart_text {
+    margin-left: 20%;
+    margin-right: 20%;
 }
